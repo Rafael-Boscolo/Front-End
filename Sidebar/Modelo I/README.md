@@ -11,3 +11,5 @@
 
 ## Links:
 :link:[Bootstrap Icon](https://icons.getbootstrap.com/)
+:link:[Tailwindcss - Customizing Colors](https://tailwindcss.com/docs/customizing-colors)
+
