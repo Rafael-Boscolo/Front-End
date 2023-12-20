@@ -22,11 +22,16 @@ body {
   top: 0;
   left: 0;
   overflow: hidden;
-  transition: .2s;
+  transition: .5s;
 }
 
-.sidebar:hover {
+/* .sidebar {
   width: 300px;
+} */
+
+.sidebar.expand {
+  width: 300px;
+  transition: .5s;
 }
 
 .btn-expand {
@@ -45,8 +50,14 @@ ul {
   list-style-type: none;
 }
 
+ul li.ativo {
+  background: var(--green-600);
+  border-top-left-radius: 5px;
+}
+
 li:hover {
   background-color: var(--green-600);
+  border-top-left-radius: 5px;
   transition: .2s;
 }
 
@@ -62,8 +73,17 @@ ul .menu-item a {
 
 ul .menu-item .icon {
   font-size: 35px;
+  padding-left: 8px;
 } 
 
 ul .menu-item .txt-link {
-  margin-left: 20px;
+  margin-left: 70px;
+  transition: .5s;
+  opacity: 0;
+}
+
+.sidebar.expand .txt-link {
+  margin-left: 30px;
+  opacity: 1;
+  transition: .5s;
 }
